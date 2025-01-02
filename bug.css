@@ -1,0 +1,1 @@
+The following CSS code snippet suffers from a subtle issue related to specificity and inheritance.  The `.child` selector's `color` property is overridden by the more specific `#parent .child` selector, even though the latter selector is nested within the parent's style declaration. This leads to unexpected styling of the `.child` element.

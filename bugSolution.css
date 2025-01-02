@@ -1,0 +1,16 @@
+/* Correcting the CSS Specificity Issue */
+#parent {
+  color: blue;
+}
+
+.child {
+  color: green; /* This will now take precedence */
+}
+
+#parent .child {
+  /* Removed - no longer needed or causing conflict */
+}
+/* Or, alternatively, if the nested rule is actually needed, make it more specific */
+#parent .specialChild{
+  color: red;
+}
